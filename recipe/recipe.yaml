@@ -18,7 +18,7 @@ build:
     - cp lib/libCRY.* ${PREFIX}/lib/
     - rm ${PREFIX}/lib/*.a
     - mkdir -p ${PREFIX}/include/cry && cp src/*.h ${PREFIX}/include/cry/
-  number: 0
+  number: 1
   skip:
     - win
     - osx
