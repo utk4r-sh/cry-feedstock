@@ -28,6 +28,8 @@ requirements:
     - ${{ compiler("cxx") }}
     - ${{ stdlib("c") }}
     - make
+  run_exports:
+    - ${{ pin_subpackage("cry", upper_bound="x") }}
 
 tests:
   - package_contents:
