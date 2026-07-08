@@ -13,7 +13,6 @@ source:
 
 build:
   script:
-    - ln -s "${AR}" "${BUILD_PREFIX}/bin/ar" # Fix hardcoded assumption "ar"
     - make -j${CPU_COUNT} CXX=$CXX
     - cp lib/libCRY.* ${PREFIX}/lib/
     - rm ${PREFIX}/lib/*.a
